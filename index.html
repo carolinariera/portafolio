@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="author" content="Carolina Riera Fuster">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final html y css. Carolina Riera Fuster.</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-----Introducción: Para este trabajo después de varios intentos he decidido usar la plantilla del documento 'ProyectoFinalCSS'.
+   Así que he decidido adecuarlo a mi gusto, cumplir con los requisitos básicos que requería y hacerlo lo mejor que he sabido.
+   
+   La temática es la creación de como sería mi portafolio profesional como artista, bueno, un prototipo aproximado.---->
+
+
+    <!-----El documento sigue estando compuesto de cuatro contenedores con su respectiva id: PAGINA1, PAGINA2, PAGINA3 Y PAGINA4------->
+
+
+
+
+    <!--------------------  PAGINA 1  ----------------------------->
+    <!--Barra de navegación que se visualizaría en formato de escritorio.-->
+
+    <div class="pagina1">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="logo">
+                        <img src="imagenes/logodefinitivo.png" style="color: white" alt="" />
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <span class="material-icons" style="color: white;">
+                            shopping_cart
+                        </span>
+                    </a>
+                </li>
+                <li class="item1">
+                    <a href="#">
+                        <span class="material-icons" style="color: white;">share</span>
+                    </a>
+                </li>
+
+                <li>Inicio</li>
+                <li><a href="#pagina2">¿Quién soy?</a></li>
+                <li><a href="#pagina3">Mis trabajos</a></li>
+                <li><a href="https://www.etsy.com/">Tienda</a></li>
+                <li><a href="https://www.blogger.com/about/?bpli=1&pli=1">Blog</a></li>
+                <li><a href="#pagina4">Contacto</a></li>
+
+                <!----El LI 'Tienda' y 'Blog' solo lleva a enlaces externos que son "ficticios" ------->
+
+
+                <!--------- Fin de barra de navegación f. escritorio----------->
+
+
+                <!-------------- Esto es la MQ para el menú dropdown----->
+                <div class="menu hacerInvisible">
+                    <button class=".opcionesDelMenu"><span class="material-icons">
+                            reorder
+                        </span></button>
+                    <div class="opcionesDelMenu">
+                        <a href="#">Inicio</a>
+                        <a href="#pagina2">¿Quién soy?</a>
+                        <a href="#pagina3">Mis trabajos</a>
+                        <a href="#">
+                            <span class="material-icons">share</span>
+                        </a>
+
+                        <a href="#">
+                            <span class="material-icons">
+                                shopping_cart
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </ul>
+        </nav>
+        <!-- Fin de la MQ para el menú dropdown-->
+
+        <!----Esta section encabezaría la página 1. En un principio iba a ser solo el H1 pero después decidí integrar el vídeo de la página 4----->
+        <section class=recuadro1>
+            <article id=videito>
+                <video class="video" muted autoplay="autoplay" loop="loop">
+                    <source src="video/Sketch%20-%2010824.mp4" type="video/mp4" />
+                </video>
+                <figure>
+                    <img src="video/Sketch%20-%2010824.mp4" alt="">
+                </figure>
+            </article>
+            <article id="primero">
+                <h1>Feel. Create. Keep it simple.</h1>
+            </article>
+        </section>
+
+    </div>
+
+    <!-------- Final de la section -------------------------------->
+    <!-------------------- FINAL PAGINA 1  ----------------------------->
+
+
+
+    <!-------------------- PAGINA 2  ----------------------------->
+    <!--La página 2 es el apartado de "¿Quién soy?" compuesto de dos imágenes y una breve descripción -->
+
+    <div id="pagina2">
+
+        <section>
+            <article id="primero">
+
+                <figure>
+                    <img src="imagenes/Imagen-perfil-2.png" alt="">
+                </figure>
+
+            </article>
+            <article id="segundo">
+
+                <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eius atque dolore, assumenda modi. Nemo ea laborum, ad consequuntur alias? Rerum possimus, odit officia ullam? Hic eos labore dolorum unde.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, cupiditate dolor unde eius delectus ut laudantium fugiat porro optio voluptatem cum animi rem. Cumque totam tempora voluptatibus pariatur autem ducimus. <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque natus tempore sint magni eos beatae exercitationem numquam! Rem maiores eius harum ex eligendi unde, ea animi hic cum, incidunt excepturi?</span>
+                    <span>Cupiditate rem, corporis magni. Quae cum recusandae in tempora facilis illum ea dolorum placeat laudantium eos, dignissimos animi eius consectetur numquam necessitatibus, quaerat vel! Nesciunt quasi rem error mollitia laudantium!</span>
+                    <span>Cumque tempore aliquam possimus repellendus nostrum pariatur numquam aut dolor aperiam, cum. Cum impedit labore expedita, totam maxime similique, sequi ab nesciunt asperiores nulla voluptatem assumenda officiis voluptas officia saepe?</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati veniam labore tenetur ratione quis ipsum laudantium, debitis accusantium temporibus nemo velit suscipit minus cumque, blanditiis eveniet quisquam doloribus tempora natus.</span>
+
+                </p>
+            </article>
+
+            <article id="ultimo">
+
+                <figure>
+                    <img src="imagenes/IMG_detalle.jpg" alt="">
+                </figure>
+
+            </article>
+        </section>
+    </div>
+    <!-------------------- FINAL PAGINA 2  ----------------------------->
+
+
+
+    <!-------------------- PAGINA 3  ----------------------------->
+    <!--Este sería el apartado de "Mis trabajos" haciendo un breve muestrario de tres imágenes de tres ilustraciones que creé en el pasado y un botón que te llevaría a cuenta de RRSS-->
+
+    <div id="pagina3">
+
+        <section>
+            <article id="primero">
+
+                <div class="flex-container">
+                    <div class="imagen"><a href="imagenes/IMG_20190408_205758.jpg"><img src="imagenes/IMG_20190408_205758.jpg" alt=""></a></div>
+                    <div class="imagen"><a href="imagenes/IMG_acuarela2019.jpeg"><img src="imagenes/IMG_acuarela2019.jpeg" alt=""></a></div>
+                    <div class="imagen3"><a href="imagenes/Panic-Attack-Def.jpg"><img src="imagenes/Panic-Attack-Def.jpg" alt=""></a></div>
+                </div>
+                <div class="boton"><button class="button" type="button"><a href="https://instagram.com/carolinalamandarina/" target="_blank">Más aquí</a></button></div>
+            </article>
+        </section>
+    </div>
+
+
+    <!-------------------- FINAL PAGINA 3  ----------------------------->
+
+    <!-------------------- PAGINA 4  ----------------------------->
+    <!-- Este sería el apartado "Contacto". Aquí introducí el iframe del mapa y el formulario  -->
+
+    <div id="pagina4">
+        <div class="formulario centrartexto">
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="" class="logo">
+                            <img src="imagenes/logodefinitivo.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-icons">share</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+                <article id="primero">
+                    <h2>Estoy en:</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.6240267080616!2d2.6659475156883845!3d39.568084314735266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129793b073d100eb%3A0xb86fc280b3fb7220!2sIes%20Francesc%20De%20Borja%20Moll!5e0!3m2!1sca!2ses!4v1610565932194!5m2!1sca!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <br><br>
+                    <address>
+                        Carrer Caracas, 6 (Nou Llevant)
+                        07007 Palma de Mallorca (Illes Balears)
+                    </address>
+
+                </article>
+
+                <article id="ultimo">
+                    <h2>Contactame para dudas o propuestas</h2>
+                    <form class="contact_form" action="#" id="contact_form">
+                        <div>
+                            <ul>
+                                <li>
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" placeholder="Your name" required />
+                                </li>
+                                <li>
+                                    <label for="age">Edad:</label>
+                                    <input type="age" name="age" placeholder="Your age" />
+                                    <span class="form_hint">Formato correcto: "number"</span>
+                                </li>
+                                <li>
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" placeholder="name@something.com" required />
+                                    <span class="form_hint">Formato correcto: "name@something.com"</span>
+                                </li>
+
+                                <li>
+                                    <label for="message">Mensaje:</label>
+                                    <textarea name="message" cols="40" rows="6" required></textarea>
+                                </li>
+
+                                <li>
+                                    <label for="condiciones">
+                                        He leído y acepto los términos y condiciones de uso</label> <input type="checkbox" id="condiciones" name="condiciones" value="condiciones">
+
+                                </li>
+                                <li>
+                                    <button class="submit" type="submit">Enviar mensaje</button>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </form>
+
+                </article>
+
+                <footer>
+                    <p>
+                        Asimismo solicito su autorización para ofrecerle productos y servicios relacionados con los solicitados y fidelizarle como cliente.
+
+                        Responsable: Identidad: Carolina Riera SL - NIF: B57839961 Dir. postal: Plaza de España 07002 Palma Teléfono: 800 900 400 Correo electrónico: info@default.com
+                        En nombre de la empresa tratamos la información que nos facilita con el fin de prestarles el servicio solicitado, realizar la facturación del mismo. Los datos proporcionados se conservarán mientras se mantenga la relación comercial o durante los años necesarios para cumplir con las obligaciones legales. Los datos no se cederán a terceros salvo en los casos en que exista una obligación legal. Usted tiene derecho a obtener confirmación sobre si en Carolina Riera SL estamos tratando sus datos personales por lo tanto tiene derecho a acceder a sus datos personales, los datos inexactos o solicitar su supresión cuando los datos ya no sean necesarios.
+                    </p>
+                </footer>
+
+
+
+            </section>
+
+        </div>
+    </div>
+    <!-------------------- FINAL PAGINA 4  --------------------------->
+
+</body>
+
+</html>
