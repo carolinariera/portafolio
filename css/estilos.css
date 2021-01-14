@@ -1,0 +1,584 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*CSS DE FORMA GLOBAL*/
+
+
+body {
+
+    font-family: 'Open Sans'
+}
+
+.formulario centrartexto {
+    text-align: center;
+}
+
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    margin: 6px;
+    margin-bottom: 2em;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 52px;
+}
+
+figure > img {
+    display: block;
+    width: 100%;
+}
+
+.hacerInvisible {
+    display: none;
+}
+
+/*FIN CSS DE FORMA GLOBAL*/
+
+
+/*ESTABLECEMOS LAS CARACTERÍSTICAS COMUNES EN LOS CONTENEDORES "PAGINA"*/
+.pagina1,
+#pagina2,
+#pagina3,
+#pagina4 {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+/* FIN ESTABLECEMOS LAS CARACTERÍSTICAS COMUNES EN LOS CONTENEDORES "PAGINA" */
+
+
+/*DAMOS EL FONDO A LOS CONTENEDORES TIPO PAGINA DE FORMA INDIVIDUAL*/
+.pagina1 {
+    background-color: #ffb01e;
+    top: 0;
+}
+
+#pagina2 {
+    background-image: url('../imagenes/fruit-5378195_1920.jpg');
+    top: 100vh;
+}
+
+#pagina3 {
+    background-image: url('../imagenes/vintage-japones.jpg');
+    top: 200vh;
+}
+
+#pagina4 {
+    background-image: url('../imagenes/flowers.jpg');
+    top: 300vh;
+}
+
+/* FIN DAMOS EL FONDO A LOS CONTENEDORES TIPO PAGINA DE FORMA INDIVIDUAL*/
+
+
+
+
+/*DEFINICIÓN DE LAS PROPIEDADES COMUNES A LA BARRA DE NAVEGACIÓN UTILIZADAS EN LAS PÁGINAS 1, 2 Y 3, OBSERVAR QUE SON DISPLAY:FLEX CON EL FIN DE DISTRIBUIR A SUS HIJOS (LOS <LI>) DENTRO DE ELLA*/
+
+ul {
+
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+    padding: 1em;
+
+    /*IMPORTANTE*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+nav li {
+
+    list-style: none;
+    padding-left: 1em;
+
+}
+
+nav li:hover {
+    opacity: 0.7;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.item1 {
+    flex-grow: 1;
+}
+
+/* FIN LA BARRA DE NAVEGACIÓN UTILIZADAS EN LAS PÁGINAS 1, 2 Y 3*/
+
+
+/*ESTABLECEMOS LAS PROPIEDADES COMUNES APLICADAS A LAS "SECTION" DE LAS PÁGINAS*/
+
+section {
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 2px;
+    /*IMPORTANTE*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+}
+
+/* FIN  ******* ESTABLECEMOS LAS PROPIEDADES COMUNES APLICADAS A LAS "SECTION" DE LAS PÁGINAS*/
+
+
+
+/* CARACTERÍSTICAS INDIVIDUALES (FUNDAMENTALMENTE ESTABLECEMOS ANCHOS) DE ARTICULOS, IMÁGENES E IFRAMES UTILIZADOS EN LAS PÁGINAS 1, 2 Y 3 */
+
+#videito {
+    width: 90%;
+    text-align: center;
+}
+
+#primero {
+    text-align: center;
+    color: white;
+
+}
+
+#pagina2 article {
+    max-width: 25%;
+    color: blue;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6em;
+    padding: 2em;
+
+}
+
+#segundo {
+    background: #c3c3c3;
+    opacity: 0.6;
+    padding: 2em;
+    color: #a0a0a0;
+}
+
+#pagina2 figure > img {
+
+    padding: 0 auto;
+
+    border-radius: 15px;
+}
+
+#pagina2 figure > img:hover {
+    border-radius: 15px;
+    opacity: 0.9;
+}
+
+.parrafo {
+
+    font-weight: bold;
+    color: #000000;
+}
+
+#pagina4 article {
+    max-width: 48%;
+
+    color: white;
+    text-align: center;
+}
+
+
+#pagina4 iframe {
+    display: block;
+    width: 50vw;
+    height: 40vh;
+}
+
+footer {
+    margin: 3.5em;
+    color: white;
+}
+
+
+/*FLEX CONTAINER DEL LA PÁGINA 3*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.imagen {
+
+    margin-right: 2em;
+}
+
+.boton {
+    display: inline-block;
+    font-size: 16px;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 100px;
+}
+
+
+/*FIN DEL FLEXCONTAINER DE LA PÁGINA 3*/
+
+/* FIN ********* CARACTERÍSTICAS INDIVIDUALES DE ARTICULOS, IMÁGENES E IFRAMES UTILIZADOS EN LAS PÁGINAS 1, 2 Y 3 */
+
+
+/*PÁGINA 4*/
+/*************************** ESTILOS PARA EL FORMULARIO  *****************************/
+
+/* === Remove input autofocus webkit === */
+*:focus {
+    outline: none;
+}
+
+/* === Form Typography === */
+
+.contact_form h2,
+.contact_form label {
+    font-family: "Open Sans";
+}
+
+.form_hint,
+.required_notification {
+    font-size: 11px;
+}
+
+/* === List Styles === */
+.contact_form ul {
+    width: 98%;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.contact_form li {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* === Form Header === */
+.contact_form h2 {
+    margin: 0;
+
+}
+
+.required_notification {
+    color: #cccccc;
+    margin: 5px 0 0 0;
+
+
+}
+
+/* === Form Elements === */
+
+.contact_form label,
+.contact_form input,
+.contact_form textarea,
+contact_form button {
+    display: flex;
+
+}
+
+.contact_form label {
+    width: 150px;
+    /*padding: 3px;*/
+}
+
+.contact_form input {
+    height: 20px;
+    width: 220px;
+    /*padding: 5px 8px;*/
+}
+
+.contact_form textarea {
+    /*padding: 8px;*/
+    width: 300px;
+    height: 100px;
+}
+
+.contact_form button {
+    margin: 30px;
+}
+
+/* form element visual styles */
+.contact_form input,
+.contact_form textarea,
+.contact_form label {
+
+    border: 1px #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-left: 2rem 0;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+    text-align: center;
+}
+
+.contact_form input:focus,
+.contact_form textarea:focus {
+    background: #fff;
+    box-shadow: 0 0 3px #aaa;
+    padding-right: 70px;
+}
+
+/* === HTML5 validation styles === */
+.contact_form input:required,
+.contact_form textarea:required {
+    background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+}
+
+.contact_form input:required:valid,
+.contact_form textarea:required:valid {
+    background: #fff url(images/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #ffffff;
+}
+
+.contact_form input:focus:invalid,
+.contact_form textarea:focus:invalid {
+    background: #fff url(images/invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #c9c9c9;
+}
+
+/* === Form hints. Básicamente esto es para advertirte de que no es el formato correcto en las casillas.=== */
+.form_hint {
+    background: #d45252;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    margin-left: 8px;
+    padding: 1px 6px;
+    z-index: 999;
+    /* hints stay above all other elements */
+    position: absolute;
+    /* allows proper formatting if hint is two lines */
+    display: none;
+}
+
+.form_hint::before {
+    content: "\25C0";
+    color: #d45252;
+    position: absolute;
+    top: 1px;
+    left: -6px;
+}
+
+.contact_form input:focus + .form_hint {
+    display: inline;
+}
+
+.contact_form input:required:valid + .form_hint {
+    background: #ffffff;
+}
+
+.contact_form input:required:valid + .form_hint::before {
+    color: #ffffff;
+}
+
+/* === Button Style === */
+button.submit {
+    background-color: #ffffff;
+    background: orange;
+
+
+    border: 1px solid #ffcb83;
+    border-bottom: 1px solid #ffcb83;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #ffffff;
+    -webkit-box-shadow: 0 1px 0 0 #ffffff inset;
+    -moz-box-shadow: 0 1px 0 0 #ffffff inset;
+    -ms-box-shadow: 0 1px 0 0 #ffffff inset;
+    -o-box-shadow: 0 1px 0 0 #ffffff inset;
+    color: white;
+    font-weight: bold;
+    padding: 20px 20px;
+    text-align: justify;
+    text-shadow: 0 -1px 0 #396715;
+}
+
+button.submit:hover {
+    opacity: .85;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button.submit:active {
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px #ffffff inset;
+    -webkit-box-shadow: 0 0 10px 5px #ffcb83 inset;
+    -moz-box-shadow: 0 0 10px 5px #ffcb83 inset;
+    -ms-box-shadow: 0 0 10px 5px #ffcb83 inset;
+    -o-box-shadow: 0 0 10px 5px #ffcb83 inset;
+}
+
+
+
+/*************************** FIN Estilos para el formulario  *************************/
+
+/*MEDIAQUERIES PARA EL MÓVIL.*/
+
+@media (max-width: 720px) {
+
+    .pagina1,
+    #pagina2,
+    #pagina3,
+    #pagina4 {
+
+        width: 110vh;
+
+    }
+
+    .pagina1 #videito {
+        display: none;
+
+    }
+
+    #pagina2 article {
+        min-width: 100%;
+    }
+
+    #pagina2 #primero {
+        display: none;
+    }
+
+    #pagina2 #segundo .parrafo {
+        justify-content: center;
+        text-align: center;
+        min-height: 50vh;
+
+    }
+
+    #pagina2 #ultimo {
+        display: none;
+    }
+
+    #pagina3 article {
+        min-width: 100%;
+    }
+
+    #pagina3 article img {
+        width: 30%;
+
+        justify-content: center;
+        margin-bottom: 1em;
+
+    }
+
+    #pagina3 .imagen3 {
+        display: none;
+    }
+
+    #pagina4 {
+        min-width: 100%;
+
+    }
+    
+    #pagina4 .formulario{
+        background-color: bisque;
+    
+    }
+
+    #pagina4 iframe {
+        display: block;
+        width: 80%;
+        margin: 1rem auto;
+
+    }
+
+
+    /*dropdown menu. Spoiler: No he conseguido por el momento hacer que se me despliegue el menú dropdown.*/
+
+    .hacerInvisible {
+        display: block;
+    }
+
+
+    .pagina1 li {
+        display: none;
+    }
+
+
+
+    /* las propiedades del botón que muestra el menú dropdown*/
+    .botonMenu {
+        background-color: #ffffff;
+        color: white;
+        padding: 1rem;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    /* contenedor de opciones del boton menu (por defecto ocultas) */
+    .opcionesDelMenu {
+        display: none;
+        /*comentar con los alumnos el position absolute*/
+        position: absolute;
+        background-color: transparent;
+        min-width: 10rem;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+
+    /* Opciones del menu dropdown */
+    .opcionesDelMenu a {
+        color: #ffe17c;
+        padding: 5px;
+
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Cambia el color de los links al pasar sobre ellos */
+    .opcionesDelMenu a:hover {
+        background-color: #ffe17c;
+    }
+
+    <div class="menu hacerInvisible"> <button class="botonMenu"> Menu dropdown</button> <div class="opcionesDelMenu"> <a href="#"> Inicio</a> <a href="#"> ¿Quién soy?</a> <a href="#"> Mis trabajos</a> <a href="#"> <span class="material-icons"> share</span> </a> </div> </div>
+
+    /* Muestra el menu dropdown al pasar por el boton*/
+    .menu:hover .opcionesDelMenu {
+        display: block;
+    }
+
+
+}
+
+/* final del dropdown menu.*/
